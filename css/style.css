@@ -687,8 +687,8 @@ a{
             .nav-tabs{
                 padding: 10px 15px;
                 justify-content: flex-start;
-                column-gap: 16px;
-                flex-direction: wrap;
+                column-gap: 15px;
+                flex-wrap: wrap;
 
                 .nav-item{
                     margin-bottom: 0;
