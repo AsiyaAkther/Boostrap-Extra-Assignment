@@ -8,7 +8,7 @@
 }
 body{
     font-family: "Quicksand", sans-serif;
-    font: 18px;
+    font-size: 18px;
     color: #333;
     font-weight: 400;
     line-height: 28px;
@@ -158,6 +158,316 @@ a{
 }
 /* About code end */
 
+/* portfolio section start */
+.portfolio{
+    padding: 80px 0;
+    background: url("../images/portfolio-bg-top-circle.png") no-repeat right top;
+    background: url("../images/portfolio-bg-bottom-circle.png") no-repeat bottom left;
+    text-align: center;
+
+    h2{
+        color: #111;
+        font-family: Nexa;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 48px;
+        span{
+            color: #8A47F6;
+        }
+    }
+
+    .portfolio-gallery-wrapper{
+        margin-top: 30px;
+
+        .nav-tabs{
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            background: #FFF;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12);
+            display: flex;
+            justify-content: space-between;
+
+            .nav-link{
+                border: none;
+                margin-left: 0;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+            .nav-link.active{
+                color: #8A47F6;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .tab-content{
+        margin-top: 30px;
+
+        .gallery-img{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            gap: 24px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            .img-1{
+                grid-column: 1 / span 1;
+                grid-row: 1 / span 2;
+            }
+            .img-2{
+                grid-column: 2 / span 2;
+                grid-row: 1 / span 1;
+            }
+            .img-3{
+                grid-column: 4 / span 1;
+                grid-row: 1 / span 1;
+            }
+            .img-4{
+                grid-column: 2 / span 1;
+                grid-row: 2 / span 1;
+            }
+            .img-5{
+                grid-column: 3 / span 2;
+                grid-row: 2 / span 1;
+            }
+            .img-6{
+                grid-column: 1 / span 2;
+                grid-row: 3 / span 1;
+            }
+            .img-7{
+                grid-column: 3 / span 1;
+                grid-row: 3 / span 1;
+            }
+            .img-8{
+                grid-column: 4 / span 1;
+                grid-row: 3 / span 2;
+            }
+            .img-9{
+                grid-column: 1 / span 1;
+                grid-row: 4 / span 1;
+            }
+            .img-10{
+                grid-column: 2 / span 2;
+                grid-row: 4 / span 1;
+            }
+        }
+    }
+}
+/* portfolio section end */
+
+/* Prices section start */
+.prices{
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+
+    .bg-decore{
+        position: absolute;
+        right: 0;
+        bottom: -50%;
+    }
+
+    h2{
+        color: #111;
+        font-family: Nexa;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+    }
+
+    .prices-cards-block{
+        margin-top: 40px;
+
+        .card{
+            border: none;
+            border-radius: 15px;
+            background: #FFF;
+            box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.15);
+            padding: 35px 30px;
+            height: 417px;
+            transition: all 0.3s ease-in-out;
+
+            h3{
+                color: #111;
+                font-family: Nexa;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 34px;
+                margin-bottom: 20px;
+            }
+            .price{
+                color: #111;
+                font-family: Nexa;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 48px;
+            }
+            .all-btn{
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .card:hover{
+        background-color: #222;
+        color: #fff;
+        h3{
+            color: #fff;
+        }
+        .price{
+            color: #fff;
+        }
+        .all-btn{
+            background-color: #fff;
+            color: #333;
+            border: none;
+        }
+    }
+}
+/* Prices section end */
+
+/* Testimonial section start */
+.testimonial{
+    padding: 80px 0;
+    background-color: rgba(138, 71, 246, 0.1);
+
+    .testi-text-block{
+        height: 422px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .caption{
+            display: flex;
+            gap: 8px;
+            justify-content: flex-start;
+            align-items: center;
+            color: #111;
+            font-weight: 500;
+            margin-bottom: 18px;
+
+            .caption-line{
+                width: 20px;
+                height: 1px;
+                background-color: #8A47F6;
+            }
+        }
+
+        h2{
+            color: #111;
+            font-family: Nexa;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 48px;
+            margin-bottom: 29px;
+        }
+        .testi-author-block{
+            width: 252px;
+            border-radius: 50px;
+            background-color: rgba(138, 71, 246, 0.15);
+            margin-top: 35px;
+
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .testi-img-block{
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    .carousel-control-prev, .carousel-control-next{
+        width: 50px;
+        height: 50px;
+        border: 1px solid #333;
+        border-radius: 50%;
+    }
+
+    .carousel-control-next{
+        top: 343px;
+        left: 360px;
+    }
+
+    .carousel-control-prev{
+        top: 343px;
+        left: 290px;
+    }
+
+    .carousel-control-prev .carousel-control-prev-icon{
+        background: url("../images/arrow-left.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .carousel-control-next .carousel-control-next-icon{
+        background: url("../images/arrow-right.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+/* Testimonial section end */
+
+/* Insta section start */
+.insta{
+    padding: 80px 0;
+
+    .insta-title-block{
+        margin-bottom: 40px;
+
+        h2{
+            color: #111;
+            font-family: Nexa;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 48px;
+        }
+    }
+    .insta-gallery{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 24px;
+        img{
+            width: 100%;
+        }
+
+        .img-1{
+            grid-column: 1 / span 2;
+        }
+        .img-3{
+            grid-column: 4 / span 1;
+            grid-row: 1 / span 2;
+        }
+        .img-4{
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 2;
+        }
+        .img-5{
+            grid-column: 3 / span 1;
+            grid-row: 2 / span 2;
+        }
+        .img-6{
+            grid-column: 4 / span 1;
+            grid-row: 3 / span 1;
+        }
+    }
+}
+/* Insta section end */
+
 /* Cta section start */
 .cta{
     padding: 80px 0;
@@ -166,7 +476,7 @@ a{
     .bg-decore{
         position: absolute;
         left: 0;
-        top: -50%;
+        top: -40%;
     }
     .form-content{
         h2{
@@ -204,6 +514,49 @@ a{
                 width: 100%;
                 border-radius: 8px;
                 border: 0.5px solid #333;
+            }
+        }
+    }
+    .form-text{
+        background-color: rgba(138, 71, 246, 0.15);
+        padding: 40px 30px;
+        border-radius: 15px;
+
+        h3{
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 34px;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+
+        .item{
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+
+            .icon{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #8A47F6;
+
+                i{
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+
+            h6{
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 22px;
+                margin-bottom: 0;
             }
         }
     }
@@ -260,6 +613,8 @@ a{
 @media screen and (max-width: 767px){
     body{
         overflow-x: hidden;
+        font-size: 16px;
+        line-height: 28px;
     }
     .navbar-collapse {
         height: 100vh;
@@ -285,7 +640,7 @@ a{
 
         .hero-text-block{
             height: auto;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
 
             h1 {
                 font-size: 48px;
@@ -319,6 +674,191 @@ a{
         }
     }
 
+    .portfolio{
+        padding: 40px 0;
+
+        h2{
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        .portfolio-gallery-wrapper{
+
+            .nav-tabs{
+                padding: 10px 15px;
+                flex-direction: wrap;
+
+                .nav-item{
+                    margin-bottom: 0;
+
+                    .nav-link{
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+
+        .tab-content{
+
+            .gallery-img{
+                gap: 8px;
+
+                img{
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    .prices{
+        padding: 40px 0;
+
+        h2 {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        .prices-cards-block{
+            .card{
+                padding: 20px 15px;
+                height: 350px;
+
+                h3{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .testimonial{
+        padding: 40px 0 80px 0;
+
+        .testi-text-block{
+            height: auto;
+            text-align: center;
+
+            .caption{
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+
+            h2{
+                font-size: 35px;
+                line-height: 45px;
+                margin-bottom: 15px;
+            }
+            .testi-author-block{
+                width: 212px;
+                margin: 0 auto;
+                margin-top: 0;
+                padding-right: 20px;
+
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .carousel-control-prev, .carousel-control-next{
+            width: 40px;
+            height: 40px;
+        }
+
+        .carousel-control-next{
+            top: 105%;
+            left: 50%;
+            margin-left: 50px;
+            transform: translateX(-50%);
+        }
+
+        .carousel-control-prev{
+            top: 105%;
+            left: 50%;
+            margin-right: 50px;
+            transform: translateX(-50%);
+        }
+
+        .carousel-control-prev .carousel-control-prev-icon{
+            background: url("../images/arrow-left.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .carousel-control-next .carousel-control-next-icon{
+            background: url("../images/arrow-right.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .insta{
+        padding: 40px 0;
+
+        .insta-title-block{
+            flex-direction: column;
+            h2 {
+                font-size: 35px;
+                line-height: 45px;
+            }
+            .all-btn {
+                font-size: 16px;
+                width: 140px;
+                height: 36px;
+            }
+        }
+
+        .insta-gallery{
+            gap: 7px;
+        }
+    }
+
+    .cta{
+        padding: 40px 0;
+
+        .bg-decore {
+            top: -30%;
+        }
+        .form-content{
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+                margin-bottom: 15px;
+            }
+            form{
+                textarea {
+                    height: 100px;
+                }
+            }
+        }
+
+        .form-text{
+            h3 {
+                font-size: 24px;
+                line-height: 24px;
+            }
+            .item{
+                .icon{
+                    width: 30px;
+                    height: 30px;
+
+                    i{
+                        font-size: 15px;
+                    }
+                }
+                .details{
+                    h6{
+                        font-size: 18px;
+                        line-height: normal;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
     .footer{
         text-align: center;
 
@@ -333,6 +873,8 @@ a{
 @media screen and (min-width: 768px) and (max-width: 991px){
     body{
         overflow-x: hidden;
+        font-size: 16px;
+        line-height: 24px;
     }
     .navbar-collapse {
         height: 100vh;
@@ -377,6 +919,158 @@ a{
                 img{
                     height: 100%;
                     border-radius: 20px;
+                }
+            }
+        }
+    }
+
+    .portfolio{
+        padding: 40px 0;
+
+        .portfolio-gallery-wrapper{
+
+            .nav-tabs{
+                padding: 10px 15px;
+
+                .nav-item{
+                    margin-bottom: 0;
+
+                    .nav-link{
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+
+        .tab-content{
+
+            .gallery-img{
+                gap: 12px;
+            }
+        }
+    }
+
+    .prices{
+        padding: 40px 0;
+
+        .prices-cards-block{
+
+            .card{
+                padding: 20px 15px;
+                height: 380px;
+
+                h3{
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                }
+                .price{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .all-btn{
+                    margin: 0 auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .card:hover{
+            background-color: #222;
+            color: #fff;
+            h3{
+                color: #fff;
+            }
+            .price{
+                color: #fff;
+            }
+            .all-btn{
+                background-color: #fff;
+                color: #333;
+                border: none;
+            }
+        }
+    }
+
+    .testimonial{
+        padding: 40px 0;
+
+        .testi-text-block{
+            height: auto;
+
+            .caption{
+                margin-bottom: 10px;
+            }
+
+            h2{
+                font-size: 28px;
+                line-height: 38px;
+                margin-bottom: 15px;
+            }
+            .testi-author-block{
+                width: 200px;
+                margin-top: 15px;
+
+                img{
+                    width: 40px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .carousel-control-prev, .carousel-control-next{
+            width: 40px;
+            height: 40px;
+        }
+
+        .carousel-control-next{
+            top: 335px;
+            left: 290px;
+        }
+
+        .carousel-control-prev{
+            top: 335px;
+            left: 230px;
+        }
+
+    }
+
+    .insta{
+        padding: 40px 0;
+
+        .insta-gallery{
+            gap: 10px;
+        }
+    }
+
+    .cta{
+        padding: 40px 0;
+
+        .form-text {
+            padding: 20px 10px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 24px;
+            }
+            .item{
+                .icon{
+                    flex-shrink: 0;
+                    width: 30px;
+                    height: 30px;
+
+                    i{
+                        font-size: 15px;
+                    }
+                }
+                .details{
+                    h6{
+                        font-size: 18px;
+                        line-height: normal;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
                 }
             }
         }
