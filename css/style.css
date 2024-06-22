@@ -686,6 +686,8 @@ a{
 
             .nav-tabs{
                 padding: 10px 15px;
+                justify-content: flex-start;
+                column-gap: 16px;
                 flex-direction: wrap;
 
                 .nav-item{
@@ -766,15 +768,13 @@ a{
 
         .carousel-control-next{
             top: 105%;
-            left: 50%;
-            margin-left: 50px;
+            left: 57%;
             transform: translateX(-50%);
         }
 
         .carousel-control-prev{
             top: 105%;
-            left: 50%;
-            margin-right: 50px;
+            left: 43%;
             transform: translateX(-50%);
         }
 
